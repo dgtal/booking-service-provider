@@ -11,12 +11,6 @@
             "homepage": "http://dgtal.info"
         }
     ],
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/dgtal/booking-api"
-        }
-    ],
     "require": {
         "php": ">=5.3.3",
         "dgtal/booking-api": "master@dev"
