@@ -1,0 +1,32 @@
+{
+    "name": "dgtal/booking-service-provider",
+    "description": "Booking API Client for the Silex Framework",
+    "keywords": ["booking", "silex"],
+    "homepage": "http://dgtal.info",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rodrigo Muñoz",
+            "email": "rodrigoguzman@gmail.com",
+            "homepage": "http://dgtal.info"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/dgtal/booking-api"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "dgtal/booking-api": "master@dev"
+    },
+    "require-dev": {
+        "silex/silex": "~1.0@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "DGtal\\Booking\\Silex\\": "src"
+        }
+    }
+}
