@@ -2,8 +2,8 @@
 
 namespace DGtal\Booking\Silex;
 
-use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Pimple\Container;
+use Pimple\ServiceProviderInterface;
 use DGtal\BookingApiClient\Client\BookingClient;
 
 /**
@@ -14,21 +14,21 @@ use DGtal\BookingApiClient\Client\BookingClient;
 class BookingServiceProvider implements ServiceProviderInterface
 {
 
-    public function register(Application $app)
+    public function register(Container $app)
     {
         $app['booking.auth'] = array();
 
-        $app['booking'] = $app->share(function() use ($app) {
+        $app['booking'] = function ($app) {
 
             $client = new BookingClient($app['booking.auth']);
 
             return $client;
 
-        });
+        };
 
     }
 
-    public function boot(Application $app)
+    public function boot(Container $app)
     {}
 
 }

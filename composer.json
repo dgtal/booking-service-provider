@@ -13,10 +13,8 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "dgtal/booking-api": "master@dev"
-    },
-    "require-dev": {
-        "silex/silex": "~1.0@dev"
+        "dgtal/booking-api": "master@dev",
+        "pimple/pimple": "~3.0"
     },
     "autoload": {
         "psr-0": {
