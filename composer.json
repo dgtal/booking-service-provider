@@ -4,13 +4,6 @@
     "keywords": ["booking", "silex"],
     "homepage": "http://dgtal.info",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Rodrigo Muñoz",
-            "email": "rodrigoguzman@gmail.com",
-            "homepage": "http://dgtal.info"
-        }
-    ],
     "require": {
         "php": ">=5.3.3",
         "dgtal/booking-api": "master@dev",
